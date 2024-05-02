@@ -59,7 +59,7 @@ class _BottomBarState extends State<BottomBar> {
               child: Column(
                 children: [
                   Icon(Icons.add_location),
-                  Text("Whislist")
+                  Text("Wishlist")
                 ],
               ),
             )),

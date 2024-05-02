@@ -1,3 +1,4 @@
+import 'package:checkinease/settings/widget/login_on.dart';
 import 'package:flutter/material.dart';
 
 class SettingScreen extends StatefulWidget {
@@ -8,8 +9,14 @@ class SettingScreen extends StatefulWidget {
 }
 
 class _SettingScreenState extends State<SettingScreen> {
+
+  bool _isLoggedIN = false;
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: _isLoggedIN ? 
+      SizedBox() : NotLogin()
+    );
   }
 }

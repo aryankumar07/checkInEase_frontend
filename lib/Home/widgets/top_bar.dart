@@ -15,7 +15,7 @@ class topBar extends StatelessWidget{
             ),
             child: Container(
               height: 60,
-              width: MediaQuery.of(context).size.width-80,
+              width: MediaQuery.of(context).size.width-90,
               child: Row(
                 children: [
                   SizedBox(width: 20,),

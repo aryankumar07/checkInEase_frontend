@@ -1,5 +1,6 @@
 import 'package:checkinease/Constants/Global_color.dart';
 import 'package:checkinease/common/bottom_navigation_bar.dart';
+import 'package:checkinease/router.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -15,6 +16,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: GlobalColor.scaffolodWhite,
       ),
+
+      onGenerateRoute: (settings) => generateRoute(settings),
+
       home: BottomBar(),
     );
   }

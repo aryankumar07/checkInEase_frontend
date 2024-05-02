@@ -1,3 +1,4 @@
+import 'package:checkinease/Inbox/widget/no_login_inbox.dart';
 import 'package:flutter/material.dart';
 
 class InboxScreen extends StatefulWidget {
@@ -8,8 +9,14 @@ class InboxScreen extends StatefulWidget {
 }
 
 class _InboxScreenState extends State<InboxScreen> {
+
+  bool _isLogged = false;
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: _isLogged ? 
+      SizedBox() : NoInboxScreen(),
+    );
   }
 }

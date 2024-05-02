@@ -1,3 +1,4 @@
+import 'package:checkinease/Trips/widgets/No_login_trip.dart';
 import 'package:flutter/material.dart';
 
 class TripScreen extends StatefulWidget {
@@ -8,8 +9,15 @@ class TripScreen extends StatefulWidget {
 }
 
 class _TripScreenState extends State<TripScreen> {
+  bool _isLogged = false;
+
+
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: _isLogged ? 
+      SizedBox() : NoLoginTripScreen() ,
+    );
   }
 }
