@@ -26,7 +26,7 @@ class _CategoryBarState extends State<CategoryBar> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 70,
+      height: 65,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: CategoryConst.CategoryList.length,
@@ -36,7 +36,7 @@ class _CategoryBarState extends State<CategoryBar> {
             child: Container(
               margin: EdgeInsets.only(
                 top: 10,
-                bottom: 10,
+                bottom: 14,
                 left: 15,
                 right: 15,
               ),
@@ -52,12 +52,14 @@ class _CategoryBarState extends State<CategoryBar> {
                   Icon(
                     CategoryConst.CategoryList[index]['icondata'],
                     color: _selected==index? Colors.black : Colors.grey,
+                    size: 18,
                   ),
                   SizedBox(height: 5,),
                   Text(
                     CategoryConst.CategoryList[index]['name'],
                     style: TextStyle(
                       color: _selected==index? Colors.black : Colors.grey,
+                      fontSize: 12
                     ),
                   )
                 ],

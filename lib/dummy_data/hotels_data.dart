@@ -102,7 +102,7 @@ class HotelData {
     },
     {
       'name':'Aryan Villa',
-      'category':'Top of the world',
+      'category':'Beach',
       'price':200000,
       'favourite' : false,
       'location'  : 'campsite in Indua',
@@ -151,4 +151,6 @@ class HotelData {
       }
     }
   ];
+
+  List<Map<String,dynamic>> fav_hotels = [];
 }

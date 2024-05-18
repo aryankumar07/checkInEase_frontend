@@ -12,10 +12,6 @@ class CategoryConst {
       'icondata': Icons.golf_course
     },
     {
-      'name':'Top of the world',
-      'icondata': FontAwesomeIcons.mountain
-    },
-    {
       'name':'Beach',
       'icondata': FontAwesomeIcons.umbrellaBeach
     },
@@ -34,6 +30,10 @@ class CategoryConst {
     {
       'name':'OMG!',
       'icondata': FontAwesomeIcons.plane
+    },
+    {
+      'name':'Top of the world',
+      'icondata': FontAwesomeIcons.mountain
     },
     
   ];
