@@ -37,4 +37,27 @@ class CategoryConst {
     },
     
   ];
+
+  static const List<Map<String,dynamic>> LocationList = [
+    {
+      'map_image' : 'assets/images/world_map.jpg',
+      'name' : "I'm Flexible"
+    },
+    {
+      'map_image' : 'assets/images/asia.svg.png',
+      'name' : "ASIA"
+    },
+    {
+      'map_image' : 'assets/images/africa.svg.png',
+      'name' : "AFRICA"
+    },
+    {
+      'map_image' : 'assets/images/europe.jpg',
+      'name' : "EUROPE"
+    },
+    {
+      'map_image' : 'assets/images/australia.png',
+      'name' : "AUSTRALIA"
+    },
+  ];
 }

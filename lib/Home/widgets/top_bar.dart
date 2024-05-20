@@ -33,7 +33,7 @@ class topBar extends StatelessWidget{
                             'Where to?',
                             style: TextStyle(
                               fontSize: 18,
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.normal,
                               color: Colors.black,
                             ),
                           ),

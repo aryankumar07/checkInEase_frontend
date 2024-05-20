@@ -1,8 +1,10 @@
 import 'package:checkinease/Constants/category_const.dart';
+import 'package:checkinease/Home/Screens/booking-details.dart';
 import 'package:checkinease/Home/widgets/category_bar.dart';
 import 'package:checkinease/Home/widgets/product_list.dart';
 import 'package:checkinease/Home/widgets/top_bar.dart';
 import 'package:checkinease/dummy_data/hotels_data.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -39,6 +41,34 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+
+  // this code not working for bluring the background of the app instead a cupertino model is used
+  // void ShowAlertDilogue(){
+  //   showDialog(
+  //     context: context, 
+  //     barrierColor: Colors.white.withOpacity(0.1),
+  //     builder: (context){
+  //       return BackdropFilter(
+  //         filter: ImageFilter.blur(
+  //           sigmaX: 5,
+  //           sigmaY: 5,
+  //         ),
+  //         child: AlertDialog(
+  //           content: SizedBox(
+  //             width: MediaQuery.of(context).size.width,
+  //             height: MediaQuery.of(context).size.height,
+  //             child: Container(
+  //               decoration: BoxDecoration(
+  //                 borderRadius: BorderRadius.all(Radius.circular(12))
+  //               ),
+  //               child: Text('working'),
+  //             ),
+  //           )
+  //         ),
+  //         );
+  //     });
+  // }
+
   
 
 
@@ -70,7 +100,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                      Padding(
                         padding: const EdgeInsets.only(top: 20),
-                        child: topBar(),
+                        child: GestureDetector(
+                          onTap: (){
+                            showCupertinoModalPopup(
+                              context: context, 
+                              builder: (context)=>BookingDetail());
+                          },
+                          child: topBar()),
                       ),
                       CategoryBar(onPressed: (index){
                         updateState(index);
