@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 
-class ShowCalender extends StatelessWidget{
+class SelectWhen extends StatelessWidget{
+
+  VoidCallback onPressed;
+
+  SelectWhen({
+    super.key,
+    required this.onPressed,
+  });
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){},
+      onTap: onPressed,
       child: Container(
         height: 60,
         width: double.infinity,

@@ -1,5 +1,7 @@
 import 'package:checkinease/Constants/Global_color.dart';
+import 'package:checkinease/Home/widgets/select_where.dart';
 import 'package:checkinease/Home/widgets/select_who.dart';
+import 'package:checkinease/Home/widgets/select_who_detail.dart';
 import 'package:checkinease/Home/widgets/show_calender.dart';
 import 'package:checkinease/Home/widgets/where_to_container.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +20,16 @@ class _BookingDetailState extends State<BookingDetail> {
   final TextEditingController _loactionController = TextEditingController();
 
   var current_pos = 0;
+  var option1 = true;
+  var option2 = false;
+  var option3 = false;
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    _loactionController.dispose();
+    super.dispose();
+  }
 
   void change(){
     if(current_pos==0){
@@ -25,6 +37,28 @@ class _BookingDetailState extends State<BookingDetail> {
     }else{
       current_pos=0;
     }
+    setState(() {});
+  }
+
+  void selectWherePop(){
+    option1 = true;
+    option2 = false;
+    option3 = false;
+    setState(() {});
+  }
+
+  void selectWhenPop(){
+    option1 = false;
+    option2 = true;
+    option3 = false;
+    setState(() {});
+  }
+
+  void selectWhoPop(){
+    print('in the select who pop');
+    option1 = false;
+    option2 = false;
+    option3 = true;
     setState(() {});
   }
 
@@ -105,19 +139,43 @@ class _BookingDetailState extends State<BookingDetail> {
                   ),
                 ),
                 SizedBox(height: 20,),
-                WhereTo(loactionController: _loactionController, 
-                locationformKey: _locationformKey),
-                SizedBox(height: 10,),
+                if(option1)...[
+                  WhereTo(loactionController: _loactionController, 
+                  locationformKey: _locationformKey),
+                ],
+                if(!option1)...[
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      left: 10,
+                      right: 10,
+                    ),
+                    child: SelectWhere(
+                      onPressed: selectWherePop,
+                    ),
+                  )
+                ],
+                SizedBox(height: 5,),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: ShowCalender(),
+                  padding: const EdgeInsets.only(
+                    left: 10,
+                    right: 10,
+                    ),
+                  child: SelectWhen(onPressed: selectWhenPop,),
                 ),
-                SizedBox(height: 10,),
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: SelectWho(),
-                ),
-                SizedBox(height: 40,),
+                SizedBox(height: 5,),
+                if(option3)...[
+                  SelectWhoDetail()
+                ],
+                if(!option3)...[
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      left: 10,
+                      right: 10,
+                      ),
+                    child: SelectWho(onPressed: selectWhoPop,),
+                  ),
+                ],
+                SizedBox(height: 80,),
                 Container(
                   height: 60,
                   width: double.infinity,

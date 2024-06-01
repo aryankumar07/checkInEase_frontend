@@ -1,11 +1,11 @@
 import 'package:checkinease/Home/widgets/select_who_detail.dart';
 import 'package:flutter/material.dart';
 
-class SelectWho extends StatelessWidget{
+class SelectWhere extends StatelessWidget{
 
   VoidCallback onPressed;
 
-  SelectWho({
+  SelectWhere({
     super.key,
     required this.onPressed,
   });
@@ -27,7 +27,7 @@ class SelectWho extends StatelessWidget{
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Text(
-                'Who',
+                'Where',
                 style: TextStyle(
                   color: Colors.grey,
                   fontSize: 18,
@@ -38,7 +38,7 @@ class SelectWho extends StatelessWidget{
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Text(
-                'Add Guests',
+                'i\'m flexible',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 16,
