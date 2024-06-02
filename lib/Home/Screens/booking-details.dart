@@ -2,7 +2,8 @@ import 'package:checkinease/Constants/Global_color.dart';
 import 'package:checkinease/Home/widgets/select_where.dart';
 import 'package:checkinease/Home/widgets/select_who.dart';
 import 'package:checkinease/Home/widgets/select_who_detail.dart';
-import 'package:checkinease/Home/widgets/show_calender.dart';
+import 'package:checkinease/Home/widgets/select_when.dart';
+import 'package:checkinease/Home/widgets/show_calendar.dart';
 import 'package:checkinease/Home/widgets/where_to_container.dart';
 import 'package:flutter/material.dart';
 
@@ -155,13 +156,18 @@ class _BookingDetailState extends State<BookingDetail> {
                   )
                 ],
                 SizedBox(height: 5,),
-                Padding(
-                  padding: const EdgeInsets.only(
-                    left: 10,
-                    right: 10,
-                    ),
-                  child: SelectWhen(onPressed: selectWhenPop,),
-                ),
+                if(!option2)...[
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      left: 10,
+                      right: 10,
+                      ),
+                    child: SelectWhen(onPressed: selectWhenPop,),
+                  ),
+                ]
+                else if(option2)...[
+                  ShowCalender(onPressed: selectWhoPop,)
+                ],
                 SizedBox(height: 5,),
                 if(option3)...[
                   SelectWhoDetail()

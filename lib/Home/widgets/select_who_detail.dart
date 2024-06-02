@@ -1,7 +1,15 @@
+import 'package:checkinease/Home/widgets/service_dog_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class SelectWhoDetail extends StatelessWidget{
+
+
+  Widget ServiceDogPop(){
+    return SerivceDogSheet();
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -288,14 +296,22 @@ class SelectWhoDetail extends StatelessWidget{
                             fontWeight: FontWeight.w400
                           ),
                         ),
-                        Text(
-                          'Bringing a sevice pet',
-                          style: TextStyle(
-                            decoration: TextDecoration.underline,
-                            fontSize: 12,
-                            fontWeight: FontWeight.normal
+                        GestureDetector(
+                          onTap: () => showModalBottomSheet(
+                            enableDrag: true,
+                            isScrollControlled: true,
+                            context: context,
+                            builder: (context)=> ServiceDogPop()
                           ),
-                          )
+                          child: Text(
+                            'Bringing a sevice pet',
+                            style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              fontSize: 12,
+                              fontWeight: FontWeight.normal
+                            ),
+                            ),
+                        )
                       ],
                     ),
                   ),

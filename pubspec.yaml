@@ -38,6 +38,7 @@ dependencies:
   font_awesome_flutter: ^10.7.0
   intl_phone_field: ^3.2.0
   carousel_slider: ^4.2.1
+  table_calendar: ^3.1.1
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +70,7 @@ flutter:
     - assets/images/africa.svg.png
     - assets/images/europe.jpg
     - assets/images/australia.png
+    - assets/images/service_dog.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
