@@ -47,7 +47,8 @@ class HotelData {
         }
       ],
       'host' : {
-        'name':'reena'
+        'name':'reena',
+        'profilePic':''
       }
     },
     {
@@ -97,7 +98,8 @@ class HotelData {
         }
       ],
       'host' : {
-        'name':'Mohino'
+        'name':'Mohino',
+        'profilePic':''
       }
     },
     {
@@ -147,7 +149,8 @@ class HotelData {
         }
       ],
       'host' : {
-        'name':'Mohino'
+        'name':'Mohino',
+        'profilePic':''
       }
     }
   ];
