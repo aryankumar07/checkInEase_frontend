@@ -38,6 +38,29 @@ class CategoryConst {
     
   ];
 
+  static const Map<String,IconData> Icondatalist = {
+    'Wifi' : Icons.wifi,
+    'Sea view' : Icons.waves,
+    'Dedicated workspace' : Icons.work,
+    'bed Lines' : Icons.bed_rounded,
+    'baby care' : Icons.baby_changing_station,
+    'Iron' : Icons.iron,
+    'Hair dryer' : Icons.air,
+    'First aid' : Icons.healing_rounded,
+    'safe' : Icons.security,
+    'Clothes storage' : Icons.warehouse,
+    'Heating' : Icons.heat_pump,
+    'Temple' : Icons.temple_buddhist_sharp,
+    'Fire extinguisher' : Icons.fire_extinguisher,
+    'Gas Cooker' : Icons.gas_meter,
+    'Fireplace' : Icons.fireplace_outlined,
+    'Bikes' : Icons.bike_scooter,
+    'Free parking' : Icons.local_parking,
+    'Smoking rooms' : Icons.smoking_rooms,
+    'Co2 alarm' : Icons.co2
+
+  };
+
   static const List<Map<String,dynamic>> LocationList = [
     {
       'map_image' : 'assets/images/world_map.jpg',

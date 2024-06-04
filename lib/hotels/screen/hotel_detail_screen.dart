@@ -44,6 +44,7 @@ class _HotelDetalScreenState extends State<HotelDetalScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(

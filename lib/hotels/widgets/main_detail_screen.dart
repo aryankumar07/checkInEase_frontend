@@ -18,7 +18,10 @@ class MainDetailScreen extends StatelessWidget{
         SizedBox(
           width: double.infinity,
           child: Image(
-            image: NetworkImage(hotelInfo['hotel_images'][0])),
+            fit: BoxFit.fill,
+            image: NetworkImage(
+              hotelInfo['hotel_images'][0],
+              )),
         ),
         Padding(
           padding: const EdgeInsets.only(top: 30),

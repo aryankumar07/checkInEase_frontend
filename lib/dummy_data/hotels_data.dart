@@ -20,14 +20,16 @@ class HotelData {
         'https://images.unsplash.com/photo-1444201983204-c43cbd584d93?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsfGVufDB8fDB8fHww',
       ],
       'quirks':[
-        'Sea view',
-        'WaterFront',
+        'Heating',
+        'safe',
         "Wifi",
-        'Dedaicated Worlspcae',
-        'Bidet',
-        'Essentials',
-        'Bed Lines',
-        'Iron'
+        'Dedicated workspace',
+        'Co2 alarm',
+        'Fire extinguisher',
+        'bed Lines',
+        'Smoking rooms',
+        'Hair dryer',
+        'First aid'
       ],
       'map' : 'location',
       'review_ids' : [
@@ -48,7 +50,8 @@ class HotelData {
       ],
       'host' : {
         'name':'reena',
-        'profilePic':''
+        'profilePic':'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'hosting_time':9,
       }
     },
     {
@@ -71,14 +74,16 @@ class HotelData {
         'https://images.unsplash.com/photo-1444201983204-c43cbd584d93?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsfGVufDB8fDB8fHww',
       ],
       'quirks':[
-        'Sea view',
-        'WaterFront',
+        'Heating',
+        'safe',
         "Wifi",
-        'Dedaicated Worlspcae',
-        'Bidet',
-        'Essentials',
-        'Bed Lines',
-        'Iron'
+        'Dedicated workspace',
+        'Co2 alarm',
+        'Fire extinguisher',
+        'bed Lines',
+        'Smoking rooms',
+        'Hair dryer',
+        'First aid',
       ],
       'map' : 'location',
       'review_ids' : [
@@ -99,7 +104,9 @@ class HotelData {
       ],
       'host' : {
         'name':'Mohino',
-        'profilePic':''
+        'profilePic':'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=2459&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'hosting_time':5,
+
       }
     },
     {
@@ -122,14 +129,19 @@ class HotelData {
         'https://images.unsplash.com/photo-1444201983204-c43cbd584d93?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsfGVufDB8fDB8fHww',
       ],
       'quirks':[
-        'Sea view',
-        'WaterFront',
+        'Heating',
+        'safe',
         "Wifi",
-        'Dedaicated Worlspcae',
-        'Bidet',
-        'Essentials',
-        'Bed Lines',
-        'Iron'
+        'Dedicated workspace',
+        'Co2 alarm',
+        'Fire extinguisher',
+        'bed Lines',
+        'Smoking rooms',
+        'Hair dryer',
+        'First aid',
+        'Temple',
+        'Gas Cooker',
+        'Clothes storage'
       ],
       'map' : 'location',
       'review_ids' : [
@@ -149,8 +161,9 @@ class HotelData {
         }
       ],
       'host' : {
-        'name':'Mohino',
-        'profilePic':''
+        'name':'Kristen',
+        'profilePic':'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'hosting_time':3,
       }
     }
   ];

@@ -1,4 +1,6 @@
+import 'package:checkinease/Constants/category_const.dart';
 import 'package:checkinease/common/line.dart';
+import 'package:checkinease/hotels/widgets/host_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -80,7 +82,83 @@ class HotelDetailScrollScreen extends StatelessWidget{
                 Padding(
                   padding: const EdgeInsets.all(15),
                   child: Line(),
-                )
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: HostBar(hotelInfo: hotelInfo),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: Line(),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Container(
+                    height: 350,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'What this Place offers',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w400
+                          ),
+                        ),
+                        Expanded(
+                          child: ListView.builder(
+                            itemCount: 6,
+                            itemBuilder: (context, index) {
+                              return Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  height: 20,
+                                  child: Row(
+                                    children: [
+                                      Icon(CategoryConst.Icondatalist[hotelInfo['quirks'][index]]),
+                                      SizedBox(width: 30,),
+                                      Text(
+                                        '${hotelInfo['quirks'][index]}',
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w300
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              );
+                            },
+                            ),
+                        ),
+                        //  SizedBox(height: 5,),
+                         Container(
+                          height: 50,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(8)),
+                            border: Border.all(
+                              color: Colors.black
+                            )
+                          ),
+                           child: Center(
+                             child: Text(
+                                'Show all ameneties provided',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w400
+                                ),
+                               ),
+                           )
+                         ),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(15),
+                  child: Line(),
+                ),
               ],
             ),
           ),

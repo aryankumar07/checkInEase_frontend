@@ -32,15 +32,15 @@ class topBar extends StatelessWidget{
                           Text(
                             'Where to?',
                             style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.normal,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
                               color: Colors.black,
                             ),
                           ),
                           Text(
                             'Anywhere. Any week. Add guests',
                             style: TextStyle(
-                              fontSize: 16,
+                              fontSize: 12,
                               fontWeight: FontWeight.normal,
                               color: Colors.grey,
                             ),
