@@ -36,10 +36,10 @@ class _HotelDetalScreenState extends State<HotelDetalScreen> {
     12 : 'Dec',
   };
 
-  // @override
-  // void initState() {
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
